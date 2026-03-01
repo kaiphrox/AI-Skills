@@ -1,9 +1,36 @@
-# AI-Skills
-
-本仓库包含与 Solana 生态相关的 **Cursor Agent Skills**，用于在 Cursor 中开发或使用 [sol-parser-sdk](sol-parser-sdk) 与 [sol-trade-sdk](sol-trade-sdk)（如狙击、跟单等场景）时获得更精准的 AI 协助。
+<div align="center">
+    <h1>⚡ AI-Skills</h1>
+    <h3><em>Cursor Agent Skills for Solana — sol-parser-sdk & sol-trade-sdk</em></h3>
+</div>
 
 <p align="center">
-  <a href="README.md">English</a> | <a href="README_CN.md">中文</a>
+    <strong>为 Solana 生态整理的 Cursor 技能，在开发或使用 <a href="https://github.com/0xfnzero/sol-parser-sdk">sol-parser-sdk</a> 与 <a href="https://github.com/0xfnzero/sol-trade-sdk">sol-trade-sdk</a> 时提供更精准的 AI 协助：DEX 事件解析、gRPC 流、狙击、跟单、账户订阅、构建与发送交易等。</strong>
+</p>
+
+<p align="center">
+    <a href="https://github.com/0xfnzero/AI-Skills/blob/main/LICENSE">
+        <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+    </a>
+    <a href="https://github.com/0xfnzero/AI-Skills">
+        <img src="https://img.shields.io/github/stars/0xfnzero/AI-Skills?style=social" alt="GitHub stars">
+    </a>
+    <a href="https://github.com/0xfnzero/AI-Skills/network">
+        <img src="https://img.shields.io/github/forks/0xfnzero/AI-Skills?style=social" alt="GitHub forks">
+    </a>
+</p>
+
+<p align="center">
+    <img src="https://img.shields.io/badge/Cursor-AI%20Skills-000?style=for-the-badge" alt="Cursor">
+    <img src="https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white" alt="Solana">
+    <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust">
+</p>
+
+<p align="center">
+    <a href="README.md">English</a> |
+    <a href="README_CN.md">中文</a> |
+    <a href="https://fnzero.dev/">Website</a> |
+    <a href="https://t.me/fnzero_group">Telegram</a> |
+    <a href="https://discord.gg/vuazbGkqQE">Discord</a>
 </p>
 
 ---
