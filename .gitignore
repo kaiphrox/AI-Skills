@@ -1,0 +1,10 @@
+# 由 install.sh 克隆到项目根目录，不纳入版本库
+sol-parser-sdk/
+sol-trade-sdk/
+
+# 常见系统与编辑器
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
